@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonieme Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anonieme Chat</h1>
+    </header>
+
+    <div id="login-section">
+        <h2>Log in of maak een account</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Gebruikersnaam" required>
+            <input type="password" id="password" placeholder="Wachtwoord" required>
+            <button type="submit">Inloggen</button>
+        </form>
+        <p>Of <a href="signup.html">Maak een account</a></p>
+    </div>
+
+    <div id="chat-section" style="display: none;">
+        <div id="global-chat">
+            <h2>Globale Chat</h2>
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="Typ hier je bericht..." />
+            <button id="send-message">Verstuur</button>
+        </div>
+
+        <div id="friends-section">
+            <h2>Vrienden</h2>
+            <ul id="friends-list"></ul>
+            <input type="text" id="add-friend-input" placeholder="Voeg vrienden toe via ID" />
+            <button id="add-friend-button">Voeg toe</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
